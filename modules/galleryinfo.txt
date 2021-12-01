@@ -1,0 +1,61 @@
+{"001":{
+        "art":
+                {"title":"Self-Portrait",
+                "year":"Max Beckmann German, 1884–1950",
+                "alt_text":"Balding man in tuxedo poses in orange, red, purple and green interior.",
+                "info_link":"http://www.artic.edu/artworks/84241",
+                "url":"https://www.artic.edu/iiif/2/44df6514-9aef-8327-98e2-82a852c22132/full/843,/0/default.jpg"
+                },
+        "unsplash":
+                {"title":"assorted-color flower photography",
+                "year":"Lina \"linataly1\" Angelov",
+                "info_link":"https://unsplash.com/photos/wLYtlT4mPxw",
+                "url":"https://images.unsplash.com/photo-1467213464501-984aa9ca27fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
+                }
+        },  
+ "002":{
+        "art":
+                {"title":"Still Life in Interior",
+                "year":"Preston Dickinson",
+                "alt_text":"A work made of oil on canvas.",
+                "info_link":"https://www.artic.edu/artworks/183292",
+                "url":"https://www.artic.edu/iiif/2/16d2efa0-6896-5c54-b024-de9b152f4195/full/843,/0/default.jpg"
+                },
+        "unsplash":
+                {"title":"The Starling was attracted to the berries. I took this picture shooting through my window hence the image is soft",
+                "year":"Chris \"chris_chow\" Chow",
+                "info_link":"https://unsplash.com/photos/rK3Q1U2aI2Y",
+                "url":"https://images.unsplash.com/photo-1467213464501-984aa9ca27fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
+                }
+        },
+ "003":{
+        "art":
+                {"title":"Man with a Pipe",
+                "year":"Pablo Picasso",
+                "alt_text":"An abstract assemblage of highly colorful, textured, patchwork fragments vaguely form a moustached human figure and architectural elements.",
+                "info_link":"http://www.artic.edu/artworks/109260",
+                "url":"https://www.artic.edu/iiif/2/43bc66e2-95b2-fb3c-b9b1-232835bfd027/full/843,/0/default.jpg"
+                },
+        "unsplash":
+                {"title":"Inle Lake farmer",
+                "year":"Matan \"matanl\" Levanon",
+                "info_link":"https://unsplash.com/photos/cTn_LTjeVhI",
+                "url":"https://images.unsplash.com/photo-1541261628549-7560ae0c06d3?ixid=MnwyNzM5NDZ8MHwxfHNlYXJjaHw2MjY4fHxuYXR1cmV8ZW58MHx8fHwxNjM4MzMxMzA1&ixlib=rb-1.2.1"
+                }
+        },
+ "004":{
+        "art":
+                {"title":"Alfred Sisley",
+                "year":"Pierre-Auguste Renoir",
+                "alt_text":"A work made of oil on canvas.",
+                "info_link":"http://www.artic.edu/artworks/14650",
+                "url":"https://www.artic.edu/iiif/2/64693216-bc82-0d21-9e57-86f8fc2e632b/full/843,/0/default.jpg"
+                },
+        "unsplash":
+                {"title":"From roots to needles",
+                "year":"Kim \"kimdanielarthur\" Daniel",
+                "info_link":"https://unsplash.com/photos/JsqAqevX6lg",
+                "url":"https://images.unsplash.com/reserve/Y1hediOeRoya666XCjYg_forest.jpg?ixid=MnwyNzM5NDZ8MHwxfHNlYXJjaHwxNTQyfHxuYXR1cmV8ZW58MHx8fHwxNjM4MzMxNDg4&ixlib=rb-1.2.1"
+                }
+        }      
+}
