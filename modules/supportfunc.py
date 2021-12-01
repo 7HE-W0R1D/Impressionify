@@ -38,5 +38,3 @@ def get_header_image():
     rand_index = random.randint(0, len(img_lst) - 1)
     picked_img = img_lst[rand_index].name
     return picked_img
-
-print(get_header_image())
