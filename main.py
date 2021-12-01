@@ -27,12 +27,12 @@ page_info = {
 		"content_id": ["about"]
 	}
 }
-
+THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
 @app.route('/')
 def index():
-	header_img = supportfunc.get_header_image()
-	supportfunc.clear_expire_file(os.path.join("static", FILE_DICT))
-	supportfunc.clear_expire_file(os.path.join("static", ART_DICT))
+	header_img = supportfunc.get_header_image(THIS_FOLDER)
+	supportfunc.clear_expire_file(os.path.join(THIS_FOLDER, "static", FILE_DICT))
+	supportfunc.clear_expire_file(os.path.join(THIS_FOLDER, "static", ART_DICT))
 	return render_template('index.html', explore_data = supportfunc.get_dict(), lucky_data = application.get_rand_comb(), header_img = header_img)
 
 @app.route('/switchtab', methods=['POST'])

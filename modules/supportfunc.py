@@ -32,8 +32,8 @@ def get_dict(filename = "modules/galleryinfo.txt"):
 
     return key_chain
 
-def get_header_image():
-    filepath = os.path.join("static", "img", "header-images")
+def get_header_image(this_folder):
+    filepath = os.path.join(this_folder, "static", "img", "header-images")
     img_lst = [x for x in os.scandir(filepath)]
     rand_index = random.randint(0, len(img_lst) - 1)
     picked_img = img_lst[rand_index].name
