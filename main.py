@@ -27,7 +27,9 @@ page_info = {
 		"content_id": ["about"]
 	}
 }
-basepath = os.path.abspath(".")
+# PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+# basepath = os.path.dirname(PROJECT_ROOT)
+basepath = ""
 @app.route('/')
 def index():
 	header_img = supportfunc.get_header_image(basepath)
