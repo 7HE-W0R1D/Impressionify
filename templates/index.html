@@ -15,8 +15,8 @@
 
 <body>
 
-    <div class="square frame" id="background">
-        <div class="panel frame">
+    <div class="square frame" id="background" style="display: flex; flex-wrap: wrap;">
+        <div class="panel frame" style="flex: 1 1 40%;">
             <aside class="mdc-drawer side-bar">
                 <div class="side-bar-top" style='background-image: url("/static/img/header-images/{{header_img}}");'>
                     <div class="side-bar-title">
@@ -65,24 +65,24 @@
                 </aside>
             </div>
             
-            <div class="header-frame">
-                <div class="header-content">
-                    <div class="mdc-typography--headline5 header-title" id="content-title">Explore<br /></div>
+        <div class="header-frame" style="flex: 1 1 60%;">
+            <div class="header-content">
+                <div class="mdc-typography--headline5 header-title" id="content-title">Explore<br /></div>
+            </div>
+            
+            <div role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate">
+                <div class="mdc-linear-progress__buffering-dots"></div>
+                <div class="mdc-linear-progress__buffer"></div>
+                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+                    <span class="mdc-linear-progress__bar-inner"></span>
                 </div>
-                
-                <div role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate">
-                    <div class="mdc-linear-progress__buffering-dots"></div>
-                    <div class="mdc-linear-progress__buffer"></div>
-                    <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
-                        <span class="mdc-linear-progress__bar-inner"></span>
-                    </div>
-                    <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
-                        <span class="mdc-linear-progress__bar-inner"></span>
-                    </div>
+                <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                    <span class="mdc-linear-progress__bar-inner"></span>
                 </div>
             </div>
+        </div>
 
-        <div class="content-frame">
+        <div class="content-frame" style="flex: 1 1 60%;">
             <div class="content-divider" id="explore-content">
                 <div class="scroll-content">
                     <div class="even-column">
@@ -712,10 +712,10 @@
                                                 <span class="mdc-button__label">Select</span>
                                             </button>
 
-                                            <button class="mdc-button mdc-card__action mdc-card__action--button mainbtn-1" href="#" target="_blank">
+                                            <a class="mdc-button mdc-card__action mdc-card__action--button mainbtn-1" href="#" target="_blank">
                                                 <div class="mdc-button__ripple"></div>
                                                 <span class="mdc-button__label">More Info</span>
-                                            </button>
+                                            </a>
                                         </div>
                                         <div class="mdc-card__action-icons" style="display: none;">
                                             <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="Share">share</button>
@@ -762,10 +762,10 @@
                                                 <span class="mdc-button__label">Select</span>
                                             </button>
 
-                                            <button class="mdc-button mdc-card__action mdc-card__action--button mainbtn-1" href="#" target="_blank">
+                                            <a class="mdc-button mdc-card__action mdc-card__action--button mainbtn-1" href="#" target="_blank">
                                                 <div class="mdc-button__ripple"></div>
                                                 <span class="mdc-button__label">More Info</span>
-                                            </button>
+                                            </a>
                                         </div>
                                         <div class="mdc-card__action-icons" style="display: none;">
                                             <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="Share">share</button>
@@ -812,10 +812,10 @@
                                                 <span class="mdc-button__label">Select</span>
                                             </button>
 
-                                            <button class="mdc-button mdc-card__action mdc-card__action--button mainbtn-1" href="#" target="_blank">
+                                            <a class="mdc-button mdc-card__action mdc-card__action--button mainbtn-1" href="#" target="_blank">
                                                 <div class="mdc-button__ripple"></div>
                                                 <span class="mdc-button__label">More Info</span>
-                                            </button>
+                                            </a>
                                         </div>
                                         <div class="mdc-card__action-icons" style="display: none;">
                                             <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="Share">share</button>
@@ -862,10 +862,10 @@
                                                 <span class="mdc-button__label">Select</span>
                                             </button>
 
-                                            <button class="mdc-button mdc-card__action mdc-card__action--button mainbtn-1" href="#" target="_blank">
+                                            <a class="mdc-button mdc-card__action mdc-card__action--button mainbtn-1" href="#" target="_blank">
                                                 <div class="mdc-button__ripple"></div>
                                                 <span class="mdc-button__label">More Info</span>
-                                            </button>
+                                            </a>
                                         </div>
                                         <div class="mdc-card__action-icons" style="display: none;">
                                             <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="Share">share</button>
@@ -945,12 +945,12 @@
                             <div class="card-content">
                                 <div class="card-header">
                                     <div class="card-title">
-                                        <h2 class="mdc-typography--headline6 upload-title">Upload Your Image!</h2>
+                                        <h2 class="mdc-typography--headline6 upload-title">Generating Result...</h2>
                                         <div class="mdc-typography--body1 upload-author" style="margin-top: -1.25rem; opacity: 0.6;">by Future(or Current) Artist</div>
                                     </div>
                                 </div>
                                 <div class="card-body mdc-typography--body2 upload-support" style="display: block; opacity: 0.6; margin-top: 0.5rem;">
-                                Image size should be smaller than 15 MB.
+                                What could you create?
                                 </div>
                             </div>
                             <div class="mdc-card__actions">
@@ -960,7 +960,7 @@
                                         <span class="mdc-button__label">Download</span>
                                     </a>
                                 </div>
-                                <div class="mdc-card__action-icons">
+                                <div class="mdc-card__action-icons" style="display: none;">
                                     <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="Share">share</button>
                                     <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="More options" id="card-02-more-btn" style="display: none; margin-top: -0rem;">more_vert</button>         
                                 </div>
@@ -968,14 +968,14 @@
                             <div class="card-more-menu" style="display: none;">
                                 <div class="mdc-menu mdc-menu-surface" id="test-menu-1">
                                     <ul class="mdc-list" role="menu" aria-hidden="false" aria-orientation="vertical" tabindex="-1">
-                                    <li class="mdc-list-item" role="menuitem">
-                                        <span class="mdc-list-item__ripple"></span>
-                                        <span class="mdc-list-item__text">Item</span>
-                                    </li>
-                                    <li class="mdc-list-item" role="menuitem">
-                                        <span class="mdc-list-item__ripple"></span>
-                                        <span class="mdc-list-item__text">Another</span>
-                                    </li>
+                                        <li class="mdc-list-item" role="menuitem">
+                                            <span class="mdc-list-item__ripple"></span>
+                                            <span class="mdc-list-item__text">Item</span>
+                                        </li>
+                                        <li class="mdc-list-item" role="menuitem">
+                                            <span class="mdc-list-item__ripple"></span>
+                                            <span class="mdc-list-item__text">Another</span>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

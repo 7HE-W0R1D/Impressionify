@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, jsonify, url_for
 import modules.supportfunc as supportfunc
 import modules.application as application
-import os, json, urllib
+import os, json, urllib, sys
 
 app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 15 * 1024 * 1024
@@ -27,14 +27,16 @@ page_info = {
 		"content_id": ["about"]
 	}
 }
-# PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-# basepath = os.path.dirname(PROJECT_ROOT)
-basepath = ""
+
+basepath = "./"
+loc_link = "static"
 @app.route('/')
 def index():
 	header_img = supportfunc.get_header_image(basepath)
-	supportfunc.clear_expire_file(os.path.join(basepath, "static", FILE_DICT))
-	supportfunc.clear_expire_file(os.path.join(basepath, "static", ART_DICT))
+	supportfunc.clear_expire_file(os.path.join(basepath, loc_link, FILE_DICT))
+	supportfunc.clear_expire_file(os.path.join(basepath, loc_link, ART_DICT))
+	supportfunc.clear_expire_file(os.path.join(basepath, loc_link, AI_DICT))
+
 	return render_template('index.html', explore_data = supportfunc.get_dict(), lucky_data = application.get_rand_comb(), header_img = header_img)
 
 @app.route('/switchtab', methods=['POST'])
@@ -100,9 +102,7 @@ def preprandart():
 
 @app.route('/getsearchart', methods=['POST'])
 def prepsearchart():
-	'''
-	
-	'''
+
 	print("Prepare for search art")
 	print(request.form['num'])
 	print(request.form['keyword'])
@@ -125,8 +125,8 @@ def upload_file():
 	}
 	if uploaded_file.filename != '':
 		rand = str(supportfunc.randgen())
-		os.mkdir(os.path.join("static", FILE_DICT, rand))
-		temp_path = os.path.join("static", FILE_DICT, rand, uploaded_file.filename)
+		os.mkdir(os.path.join(loc_link, FILE_DICT, rand))
+		temp_path = os.path.join(loc_link, FILE_DICT, rand, uploaded_file.filename)
 		uploaded_file.save(temp_path)
 		temp_path = supportfunc.validate_path(temp_path)
 		return_dict = {
@@ -144,19 +144,19 @@ def finaldisplay():
 	# download art from link
 
 	rand_dir = str(supportfunc.randgen())
-	file_loc = os.path.join("static", ART_DICT, rand_dir, "aic.jpg")
-	os.mkdir(os.path.join("static", ART_DICT, rand_dir))
+	file_loc = os.path.join(loc_link, ART_DICT, rand_dir, "aic.jpg")
+	os.mkdir(os.path.join(loc_link, ART_DICT, rand_dir))
 	urllib.request.urlretrieve(request.form['art'], file_loc)
 
 	result_obj = application.upload_photos_request(open(request.form['img'],"rb"), open(file_loc,"rb"))
 	# save file
 	rand_dir = str(supportfunc.randgen())
-	result_loc = os.path.join("static", AI_DICT, rand_dir)
+	result_loc = os.path.join(loc_link, AI_DICT, rand_dir)
 	os.mkdir(result_loc)
 	urllib.request.urlretrieve(result_obj.url, os.path.join(result_loc, "result.jpg"))
 
 	result_xs = application.deepai_export(result_obj)
-	result_xs["info_link"] = result_loc
+	result_xs["info_link"] = os.path.join(result_loc, "result.jpg")
 	print("Data: " +  str(result_xs))
 	return_dict = {
 		"info":  result_xs,
