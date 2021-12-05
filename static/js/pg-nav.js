@@ -16,7 +16,7 @@ $(function() {
 			tgt_tab.prepend(ripple);
 			tgt_tab.addClass("mdc-list-item--activated");
 			curr_tab.removeClass("mdc-list-item--activated");
-			curr_tab.find(".mdc-list-item__ripple").remove()
+			curr_tab.find(".mdc-list-item__ripple").remove();
 		}
 
 		$.ajax({

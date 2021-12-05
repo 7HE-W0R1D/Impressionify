@@ -44,7 +44,7 @@ for (i = 0; i < x.length; i++) {
   mdc.ripple.MDCRipple.attachTo(x[i]);
 }
 
-window.sr = ScrollReveal({ reset: true });
+window.sr = ScrollReveal({ reset: false });
 sr.reveal('#explore-content .mdc-card', { 
   origin: 'right', 
   duration: 1000 

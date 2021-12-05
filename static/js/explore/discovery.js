@@ -1,5 +1,4 @@
 $(function() {
-
 	$('.discover_jmp').on('click', function(e){
 		var art_id = $(this).attr("value"); // stored in local dataset
          
