@@ -51,7 +51,8 @@ def index():
 	supportfunc.clear_expire_file(art_dir)
 	supportfunc.clear_expire_file(result_dir)
 
-	return render_template('index.html', explore_data = supportfunc.get_dict(), lucky_data = application.get_rand_comb(), header_img = header_img)
+	# return render_template('index.html', explore_data = supportfunc.get_dict(), lucky_data = application.get_rand_comb(), header_img = header_img)
+	return render_template('index.html', explore_data = supportfunc.get_dict(), header_img = header_img)
 
 @app.route('/switchtab', methods=['POST'])
 def process():

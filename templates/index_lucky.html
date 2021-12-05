@@ -349,25 +349,25 @@
 
                                 <card-dyna class="mdc-card mdc-card--outlined" id="lucky-deepai">
                                     <div class="mdc-card__primary-action media-viewport__max">
-                                        <div class="mdc-card__media card-image" style='background-image: url("/static/img/material-grey-default.png");'></div>
+                                        <div class="mdc-card__media card-image" style='background-image: url({{lucky_data["deepai"]["url"]}});'></div>
                                     </div>
                                     <div class="body__without-button">
                                         <div class="card-content">
                                             <div class="card-header">
                                                 <div class="card-title">
-                                                    <h2 class="mdc-typography--headline6 upload-title">Click the Refresh Button to Begin!</h2>
-                                                    <div class="mdc-typography--body1 upload-author" style="margin-top: -1.25rem; opacity: 0.6;">to Future (or Current) Artist</div>
+                                                    <h2 class="mdc-typography--headline6 upload-title">{{lucky_data["deepai"]["title"]}}</h2>
+                                                    <div class="mdc-typography--body1 upload-author" style="margin-top: -1.25rem; opacity: 0.6;">{{lucky_data["deepai"]["year"]}}</div>
                                                 </div>
                                             </div>
                                             <div class="card-body mdc-typography--body2 upload-support" style="display: block; opacity: 0.6; margin-top: 0.5rem;">
-                                                It's on the lower right, you see that?
+                                                {{lucky_data["deepai"]["alt_text"]}}
                                             </div>
                                         </div>
                                         <div class="mdc-card__actions" style=" margin-top: -0rem;">
                                             <div class="mdc-card__action-buttons">
-                                                <a class="mdc-button mdc-card__action mdc-card__action--button mainbtn-1" href='https://deepai.org/machine-learning-model/fast-style-transfer'' target="_blank" disabled>
+                                                <a class="mdc-button mdc-card__action mdc-card__action--button mainbtn-1" href='{{lucky_data["deepai"]["info_link"]}}'' target="_blank">
                                                     <div class="mdc-button__ripple"></div>
-                                                    <span class="mdc-button__label">Check Out Deep.ai</span>
+                                                    <span class="mdc-button__label">{{lucky_data["deepai"]["btn_str"]}}</span>
                                                 </a>
                                             </div>
                                             <div class="mdc-card__action-icons" style="display: none;">
@@ -394,25 +394,25 @@
 
                                 <card-dyna class="mdc-card mdc-card--outlined" id=lucky-art>
                                     <div class="mdc-card__primary-action media-viewport__max">
-                                        <div class="mdc-card__media card-image" style='background-image: url("/static/img/material-grey-default.png");'></div>
+                                        <div class="mdc-card__media card-image" style='background-image: url({{lucky_data["art"]["url"]}});'></div>
                                     </div>
                                     <div class="body__without-button">
                                         <div class="card-content">
                                             <div class="card-header">
                                                 <div class="card-title">
-                                                    <h2 class="mdc-typography--headline6 upload-title">The Scrolling Effect is Pretty Cool, Isn't It?</h2>
-                                                    <div class="mdc-typography--body1 upload-author" style="margin-top: -1.25rem; opacity: 0.6;">to Future (or Current) Artist</div>
+                                                    <h2 class="mdc-typography--headline6 upload-title">{{lucky_data["art"]["title"]}}</h2>
+                                                    <div class="mdc-typography--body1 upload-author" style="margin-top: -1.25rem; opacity: 0.6;">{{lucky_data["art"]["year"]}}</div>
                                                 </div>
                                             </div>
                                             <div class="card-body mdc-typography--body2 upload-support" style="display: block; opacity: 0.6; margin-top: 0.5rem;">
-                                                When you resize, remember to click the arrow to get cards in the right position.
+                                                {{lucky_data["art"]["alt_text"]}}
                                             </div>
                                         </div>
                                         <div class="mdc-card__actions" style=" margin-top: -0rem;">
                                             <div class="mdc-card__action-buttons">
-                                                <a class="mdc-button mdc-card__action mdc-card__action--button mainbtn-1" href='https://design.google/' target="_blank">
+                                                <a class="mdc-button mdc-card__action mdc-card__action--button mainbtn-1" href='{{lucky_data["art"]["info_link"]}}'' target="_blank">
                                                     <div class="mdc-button__ripple"></div>
-                                                    <span class="mdc-button__label">Where I Met This Scrolling</span>
+                                                    <span class="mdc-button__label">{{lucky_data["art"]["btn_str"]}}</span>
                                                 </a>
                                             </div>
                                             <div class="mdc-card__action-icons" style="display: none;">
@@ -439,31 +439,25 @@
 
                                 <card-dyna class="mdc-card mdc-card--outlined" id="lucky-unsplash">
                                     <div class="mdc-card__primary-action media-viewport__max">
-                                        <div class="mdc-card__media card-image" style='background-image: url("/static/img/material-grey-default.png");'></div>
+                                        <div class="mdc-card__media card-image" style='background-image: url({{lucky_data["unsplash"]["url"]}});'></div>
                                     </div>
                                     <div class="body__without-button">
                                         <div class="card-content">
                                             <div class="card-header">
                                                 <div class="card-title">
-                                                    <h2 class="mdc-typography--headline6 upload-title">Cool Layout for Mobile Devices Available!</h2>
-                                                    <div class="mdc-typography--body1 upload-author" style="margin-top: -1.25rem; opacity: 0.6;">to Future (or Current) Artist</div>
+                                                    <h2 class="mdc-typography--headline6 upload-title">{{lucky_data["unsplash"]["title"]}}</h2>
+                                                    <div class="mdc-typography--body1 upload-author" style="margin-top: -1.25rem; opacity: 0.6;">{{lucky_data["unsplash"]["year"]}}</div>
                                                 </div>
                                             </div>
                                             <div class="card-body mdc-typography--body2 upload-support" style="display: block; opacity: 0.6; margin-top: 0.5rem;">
-                                                If you are on desktop, try it! And Special Thanks to Sean Munson, my instructor, and Kevin Powell, the CSS god, for everything they taught me.
+                                                {{lucky_data["unsplash"]["alt_text"]}}
                                             </div>
                                         </div>
                                         <div class="mdc-card__actions" style=" margin-top: -0rem;">
                                             <div class="mdc-card__action-buttons">
-                                                <a class="mdc-button mdc-card__action mdc-card__action--button mainbtn-1" href='https://www.youtube.com/kevinpowell'' target="_blank">
+                                                <a class="mdc-button mdc-card__action mdc-card__action--button mainbtn-1" href='{{lucky_data["unsplash"]["info_link"]}}'' target="_blank">
                                                     <div class="mdc-button__ripple"></div>
-                                                    <span class="mdc-button__label">To Kelvin's Channel</span>
-                                                </a>
-                                            </div>
-                                            <div class="mdc-card__action-buttons">
-                                                <a class="mdc-button mdc-card__action mdc-card__action--button mainbtn-1" href='https://www.hcde.washington.edu/munson' target="_blank">
-                                                    <div class="mdc-button__ripple"></div>
-                                                    <span class="mdc-button__label">To Sean's Profile</span>
+                                                    <span class="mdc-button__label">{{lucky_data["unsplash"]["btn_str"]}}</span>
                                                 </a>
                                             </div>
                                             <div class="mdc-card__action-icons" style="display: none;">
