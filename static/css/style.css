@@ -328,8 +328,9 @@ html,body{ margin:0; padding:0; height:100%; width:100%; overflow-x: initial;}
 } */
 
 card-dyna {
-  max-width: calc(100%);
+  max-width: calc(100% - (48px) * 2);;
   max-height: 1000px;
+  width: 0px !important;
   min-width: 100%;
   height: calc(100vh - 208px);
   display: block;
