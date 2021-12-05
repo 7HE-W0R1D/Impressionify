@@ -30,12 +30,26 @@ page_info = {
 
 basepath = "./"
 loc_link = "static"
+
+file_dir = os.path.join(basepath, loc_link, FILE_DICT)
+art_dir = os.path.join(basepath, loc_link, ART_DICT)
+result_dir = os.path.join(basepath, loc_link, AI_DICT)
+
+if not os.path.isdir(file_dir):
+	os.mkdir(file_dir)
+
+if not os.path.isdir(art_dir):
+	os.mkdir(art_dir)
+
+if not os.path.isdir(result_dir):
+	os.mkdir(result_dir)
+
 @app.route('/')
 def index():
 	header_img = supportfunc.get_header_image(basepath)
-	supportfunc.clear_expire_file(os.path.join(basepath, loc_link, FILE_DICT))
-	supportfunc.clear_expire_file(os.path.join(basepath, loc_link, ART_DICT))
-	supportfunc.clear_expire_file(os.path.join(basepath, loc_link, AI_DICT))
+	supportfunc.clear_expire_file(file_dir)
+	supportfunc.clear_expire_file(art_dir)
+	supportfunc.clear_expire_file(result_dir)
 
 	return render_template('index.html', explore_data = supportfunc.get_dict(), lucky_data = application.get_rand_comb(), header_img = header_img)
 
