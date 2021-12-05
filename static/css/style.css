@@ -394,6 +394,18 @@ placehold {
   display: block;
 }
 
+.mdc-snackbar {
+  bottom: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  /*Small Screen*/
+  /*Elevate the snack bar*/
+  .mdc-snackbar {
+    bottom: 80px !important;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   /* Desktop*/
   .side-bar-bottom {
