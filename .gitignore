@@ -1,2 +1,5 @@
 /Lib
 /__pycache__
+/static/userupload/*
+/static/aicphoto/*
+/static/result/*
