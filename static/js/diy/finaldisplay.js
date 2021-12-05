@@ -1,7 +1,7 @@
 function refresh_card(data){
     $("#diy-content-03" + " .card-image").css("background-image", "url(" + data["url"] + ")")
     $("#diy-content-03" + " .upload-title").text(data["title"])
-    $("#diy-content-03" + " .upload-author").text("by " + data["year"])
+    $("#diy-content-03" + " .upload-author").text(data["year"])
     $("#diy-content-03" + " .upload-support").text(data["alt_text"])
     $("#diy-content-03" + " .mainbtn-1").attr("href", data["info_link"])
 }
