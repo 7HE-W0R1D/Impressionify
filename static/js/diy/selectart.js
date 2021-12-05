@@ -44,46 +44,54 @@ $(function() {
 
     $('#jmp-diy-fab').on('click', function(){
         var keywords = $("#refresh-queue").attr("keyword")
+        $(".select-art").attr("disabled", "");
 		$.ajax({
 			data : {"num": 5, "keyword": keywords},
 			type : 'POST',
 			url : '/getrandart'
 		}).done(function(data) {
 			replace_cards(data)
+            $(".select-art").removeAttr("disabled");
         })
 	});
 
     $('#refresh-queue').on('click', function(){
         var keywords = $("#refresh-queue").attr("keyword")
+        $(".select-art").attr("disabled", "");
 		$.ajax({
 			data : {"num": 5, "keyword": keywords},
 			type : 'POST',
 			url : '/getrandart'
 		}).done(function(data) {
             refresh_queue(data);
+            $(".select-art").removeAttr("disabled");
         })
 	});
 
     $("#search-queue").on("click", function(){
         var keyword = "[\"" + $("#diy-search").val() + "\"]"
+        $(".select-art").attr("disabled", "");
         $.ajax({
 			data : {"num": 5, "keyword": keyword},
 			type : 'POST',
 			url : '/getsearchart'
 		}).done(function(data) {
             refresh_queue(data)
+            $(".select-art").removeAttr("disabled");
         })
     });
 
     $('#diy-search').on("keyup", function (e) {
         if (e.which == 13) {
             var keyword = "[\"" + $("#diy-search").val() + "\"]"
+            $(".select-art").attr("disabled", "");
             $.ajax({
                 data : {"num": 5, "keyword": keyword},
                 type : 'POST',
                 url : '/getsearchart'
             }).done(function(data) {
                 refresh_queue(data)
+                $(".select-art").removeAttr("disabled");
             })
         }
       });

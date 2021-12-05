@@ -345,6 +345,12 @@ card-dyna.card-normal__dyna {
 
 }
 
+placehold {
+  height: 64px;
+  width: 100%;
+  display: block;
+}
+
 @media only screen and (min-width: 992px) {
   /* Desktop*/
   .side-bar-bottom {
@@ -362,5 +368,9 @@ card-dyna.card-normal__dyna {
 
   .header-frame {
     position: fixed;
+  }
+
+  placehold {
+    display: none;
   }
 }
