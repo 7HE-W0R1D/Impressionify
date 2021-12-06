@@ -18,18 +18,23 @@ $(function() {
 					$("#lucky-art .upload-author").text("by " + data["info"]["art"]["year"])
 					$("#lucky-art .upload-support").text(data["info"]["art"]["alt_text"])
 					$("#lucky-art .mainbtn-1").attr("href", data["info"]["art"]["info_link"])
+					$("#lucky-art .mainbtn-1 .mdc-button__label").text(data["info"]["art"]["btn_str"])
 		
 					$("#lucky-unsplash .card-image").css("background-image", "url(" + data["info"]["unsplash"]["url"] + ")")
 					$("#lucky-unsplash .upload-title").text(data["info"]["unsplash"]["title"])
 					$("#lucky-unsplash .upload-author").text("by " + data["info"]["unsplash"]["year"])
 					$("#lucky-unsplash .upload-support").text(data["info"]["unsplash"]["alt_text"])
 					$("#lucky-unsplash .mainbtn-1").attr("href", data["info"]["unsplash"]["info_link"])
+					$("#lucky-unsplash .mainbtn-1 .mdc-button__label").text(data["info"]["unsplash"]["btn_str"])
 		
 					$("#lucky-deepai .card-image").css("background-image", "url(" + data["info"]["deepai"]["url"] + ")")
 					$("#lucky-deepai .upload-title").text(data["info"]["deepai"]["title"])
-					$("#lucky-deepai .upload-author").text("by " + data["info"]["deepai"]["year"])
+					$("#lucky-deepai .upload-author").text(data["info"]["deepai"]["year"])
 					$("#lucky-deepai .upload-support").text(data["info"]["deepai"]["alt_text"])
 					$("#lucky-deepai .mainbtn-1").attr("href", data["info"]["deepai"]["info_link"])
+					$("#lucky-deepai .mainbtn-1 .mdc-button__label").text(data["info"]["deepai"]["btn_str"])
+
+					$(".mainbtn-tmp").hide()
 				}, 250);
 
 			$("#lucky-content .prv-itm").attr("disabled", "")

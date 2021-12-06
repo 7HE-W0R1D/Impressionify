@@ -46,7 +46,7 @@ $(function() {
         var keywords = $("#refresh-queue").attr("keyword")
         $(".select-art").attr("disabled", "");
 		$.ajax({
-			data : {"num": 5, "keyword": keywords},
+			data : {"num": 4, "keyword": keywords},
 			type : 'POST',
 			url : '/getrandart'
 		}).done(function(data) {
@@ -59,7 +59,7 @@ $(function() {
         var keywords = $("#refresh-queue").attr("keyword")
         $(".select-art").attr("disabled", "");
 		$.ajax({
-			data : {"num": 5, "keyword": keywords},
+			data : {"num": 4, "keyword": keywords},
 			type : 'POST',
 			url : '/getrandart'
 		}).done(function(data) {
@@ -72,7 +72,7 @@ $(function() {
         var keyword = "[\"" + $("#diy-search").val() + "\"]"
         $(".select-art").attr("disabled", "");
         $.ajax({
-			data : {"num": 5, "keyword": keyword},
+			data : {"num": 4, "keyword": keyword},
 			type : 'POST',
 			url : '/getsearchart'
 		}).done(function(data) {
@@ -86,7 +86,7 @@ $(function() {
             var keyword = "[\"" + $("#diy-search").val() + "\"]"
             $(".select-art").attr("disabled", "");
             $.ajax({
-                data : {"num": 5, "keyword": keyword},
+                data : {"num": 4, "keyword": keyword},
                 type : 'POST',
                 url : '/getsearchart'
             }).done(function(data) {
