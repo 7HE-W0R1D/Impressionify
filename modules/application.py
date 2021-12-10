@@ -521,7 +521,7 @@ def main():
     art_work_lst = []
     nature_pic_lst = []
     final_pic_lst = []
-    nature_pic_lst = get_random_pic(keyword="chris_chow", num=10)
+    # nature_pic_lst = get_random_pic(keyword="chris_chow", num=10)
 
     # Gives some example output
     # for i in range(20):
@@ -536,7 +536,7 @@ def main():
     # print("art_work_lst: " + str([art_work.__str__() for art_work in art_work_lst]))
     # print("nature_pic_lst: " + str([art_work.__str__() for art_work in nature_pic_lst]))
     # print("final_pic_lst: " + str([art_work.url for art_work in final_pic_lst]))
-    print(nature_pic_lst)
+    # print(nature_pic_lst)
 
     # for art in get_searched_art("PoppyField", 10):
     #     print(art)
