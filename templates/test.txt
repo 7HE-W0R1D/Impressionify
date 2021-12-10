@@ -1,5 +1,0 @@
-{% for flickr_key in flickr_data %}
-{% for photo in flickr_data[flickr_key]["data"]%} {% endfor %}
-This is the top 10 images sorted by {{flickr_data[flickr_key]["type"]}}.
-{{photo.title}}	{{photo.__str__()}}
-{% endfor %}
