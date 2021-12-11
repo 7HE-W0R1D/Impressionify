@@ -9,6 +9,7 @@
         "unsplash":
                 {"title":"assorted-color flower photography",
                 "year":"Lina \"linataly1\" Angelov",
+                "alt_text":"Unsplash, the internet’s source of freely-usable images.",
                 "info_link":"https://unsplash.com/photos/wLYtlT4mPxw",
                 "url":"https://images.unsplash.com/photo-1467213464501-984aa9ca27fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
                 }
@@ -24,6 +25,7 @@
         "unsplash":
                 {"title":"The Starling was attracted to the berries. I took this picture shooting through my window hence the image is soft",
                 "year":"Chris \"chris_chow\" Chow",
+                "alt_text":"Unsplash, the internet’s source of freely-usable images.",
                 "info_link":"https://unsplash.com/photos/rK3Q1U2aI2Y",
                 "url":"https://images.unsplash.com/photo-1542772253-e4692a5921d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
                 }
@@ -39,6 +41,7 @@
         "unsplash":
                 {"title":"Inle Lake farmer",
                 "year":"Matan \"matanl\" Levanon",
+                "alt_text":"Unsplash, the internet’s source of freely-usable images.",
                 "info_link":"https://unsplash.com/photos/cTn_LTjeVhI",
                 "url":"https://images.unsplash.com/photo-1541261628549-7560ae0c06d3?ixid=MnwyNzM5NDZ8MHwxfHNlYXJjaHw2MjY4fHxuYXR1cmV8ZW58MHx8fHwxNjM4MzMxMzA1&ixlib=rb-1.2.1"
                 }
@@ -54,6 +57,7 @@
         "unsplash":
                 {"title":"From roots to needles",
                 "year":"Kim \"kimdanielarthur\" Daniel",
+                "alt_text":"Unsplash, the internet’s source of freely-usable images.",
                 "info_link":"https://unsplash.com/photos/JsqAqevX6lg",
                 "url":"https://images.unsplash.com/reserve/Y1hediOeRoya666XCjYg_forest.jpg?ixid=MnwyNzM5NDZ8MHwxfHNlYXJjaHwxNTQyfHxuYXR1cmV8ZW58MHx8fHwxNjM4MzMxNDg4&ixlib=rb-1.2.1"
                 }
